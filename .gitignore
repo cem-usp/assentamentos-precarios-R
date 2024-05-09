@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 downloads/Censo2010/**
+resultados/*.csv
