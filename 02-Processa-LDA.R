@@ -70,6 +70,8 @@ for (i in 1:nrow(ufs)) {
   codUf <- ufs[i,1]$uf
   # Separa os dados da UF.
   dadosCemUf <- modelo %>% filter(uf==as.numeric(codUf)) %>% na.omit()
+  ## TODO
+  ## Filtrar apenas os municípios que não fazem parte de uma RM
   # Seleciona as variáveis de interesse.
   dadosCemUf <- dadosCemUf[, 11:27]# %>% select(all_of(variaveis))
   dadosCemUf <- dadosCemUf %>% 
